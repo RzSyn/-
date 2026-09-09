@@ -1,6 +1,6 @@
 ---
 name: constitution-site
-description: Working rules for the รัฐธรรมนุญจำลอง site (one 5MB website_constitution.html). Load before ANY edit to that file. Covers the structural hazard that makes broken nesting invisible, the mandatory validation script, insertion recipes, shell/encoding traps, site conventions, and the commit-and-push-every-change rule.
+description: Working rules for the รัฐธรรมนุญจำลอง site (one 5MB website_constitution.html). Load before ANY edit to that file, and again whenever a mistake happens so the lesson gets written down. Covers the structural hazard that makes broken nesting invisible, the mandatory validation script, insertion recipes, shell/encoding traps, site conventions, the commit-and-push-every-change rule, and a running log of mistakes already made — which must be appended to whenever a new one occurs.
 ---
 
 # รัฐธรรมนุญจำลอง — working rules
@@ -282,6 +282,100 @@ grep -n 'นายกรัฐมนตรีคนปัจจุบัน' web
 It is index-driven with no hardcoded length, so adding entries is safe — but
 each entry needs a matching `<button onclick="selectTimelineEra(N, this)">`.
 Verify by executing the array with node, not by eye.
+
+---
+
+## RULE 8 — Record every mistake in this file, immediately
+
+**This skill is the memory. If a mistake is not written down here, it will
+happen again.** Standing instruction from the user: เรียนรู้จากความผิดพลาด.
+
+### When something goes wrong
+
+The moment a command fails, a splice lands in the wrong place, a fact turns out
+wrong, or the user corrects something:
+
+1. **Fix it** — and say plainly what broke and why. Never quietly re-run and
+   hope. The user reads the reasoning, not just the result.
+2. **Write it into this file** — into the matching rule if one fits (a shell
+   failure goes in the RULE 4 table, a bad splice in RULE 3), otherwise into the
+   mistake log below.
+3. **Commit both together** — the fix and the skill update, in one commit, then
+   push. The lesson must not outlive the session in memory alone.
+
+### What counts as worth recording
+
+Record it if a future session could repeat it:
+
+- a command that failed for an environment reason (quoting, encoding, a flag)
+- a wrong assumption about the file's structure or conventions
+- a fact asserted without checking that turned out wrong
+- a user correction — **especially** a correction, because it means the
+  reasoning was wrong, not just the typing
+- a near-miss caught by validation — those are the most valuable, since the
+  validation is the only thing standing between a bad splice and a broken site
+
+Do **not** record: one-off typos with no pattern, anything already covered.
+
+### How to write an entry
+
+State what was done, what actually happened, and the rule that prevents it.
+Be concrete — line numbers, the exact wrong string, the exact right one. Vague
+entries ("be careful with splices") teach nothing.
+
+Do not soften entries to look better. An entry that hides what really happened
+is worse than no entry, because it creates false confidence.
+
+---
+
+## Mistake log
+
+Newest last. Entries here have all actually happened.
+
+**Grabbed the first `</section>` in the file.** Spliced a new tab panel at
+`src.index('</section>')`, which is the one closing `<section class="hero">`
+near line 2083. The panel landed inside the hero banner, ~38,000 lines from the
+tab container. Counts stayed balanced, so nothing looked wrong. → RULE 3:
+assert the insertion point is inside `<section id="history_and_pms">`.
+
+**Searched for an id attribute instead of the opening tag.** Used
+`src.index('id="kpptp-tab"')` as the start of a div walk. That position is the
+*attribute*, so the first regex match was the *next* `<div`, the depth counter
+started one tag late and hit zero one level early. Two new panels were spliced
+**inside** `kpptp-tab`. Div counts: 58/58, 93/93, 86/86 — all balanced. Only the
+overlap check caught it. → RULE 3: always `rindex('<div', 0, a)` first.
+
+**Used PowerShell here-string syntax in a Bash call.** `git commit -m @'…'@`
+put a literal `@` on line 1, making it the commit subject. Had to amend. → RULE
+4: `git commit -F -` with a Bash heredoc.
+
+**Chained `python -c "…"` and a heredoc in one command.** Bash failed with
+``unexpected EOF while looking for matching ` `` — while committing this very
+skill file, which already warned about heredoc fragility. → Run validation and
+commit as separate calls.
+
+**Assumed a term length instead of checking.** Reasoned that because PM 30 is
+labelled "วาระที่ ๒ และ ๓", PM 4's eight years must be one term. The user
+corrected it: under รธน. ๒๔๔๕ a term was 4 years, so it is two terms. The site
+states `วาระละ ๘ ปี` for the modern era only (lines 16444, 38535, 38574) — the
+evidence was there and went unread. → RULE 5: grep before asserting.
+
+**Nearly ran a replace-all across different people.** Four places contained
+`จอมพล (กองทัพบก)`. Three were จอมพลคงฤทธิ์; one (~line 40021) was
+**จอมพลปฏิวัติ พิบูลอสงไขย**, a different character. Checking each occurrence's
+nearest `tri-profile-name` first prevented corrupting a villain's record. →
+RULE 5: identify *whose* record each match belongs to before any bulk edit.
+
+**Left twelve pieces of work uncommitted at once.** Four new tabs, four binary
+assets and many edits sat unsaved while the user kept requesting more. A single
+bad splice would have destroyed all of it. The user then made commit-and-push
+standing policy. → RULE 1.
+
+**Under-reported available data.** Used `๗๒.๙%` for Thaksin's 2680 election
+from the roster line, without checking the fuller record at line 39207 — which
+also had seat counts (๓๖๔/๕๐๐) and both poll figures (๔๑% → ๖๘.๗%). The user
+asked "เอามาจากไหน" and the better source surfaced. → RULE 5: find *all*
+occurrences of a fact, then use the richest one.
 
 ---
 
