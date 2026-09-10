@@ -471,6 +471,19 @@ touching 2475 — คณะราษฎร, สมุดปกเหลือง
 is probably real history, not canon. Check it against rama7-tab and chakri-tab
 before repeating it, even when the text is already on the site.
 
+**Read every article's badge one article late.** Each article is a card:
+`<div class="article-card" id="art_N" data-origin="…">` → header with
+`<span class="badge …">` → body with `มาตรา N`. The badge comes **before** the
+number. Scanning forward from "มาตรา N" for the next badge returns article
+N+1's. Two consequences, both real: (1) earlier in the session the user's
+request to mark ม.๑๐๘ "แก้ไขจาก รธน. ๒๔๔๕" was applied to ม.๑๐๙, because the
+edit was scoped "between มาตรา ๑๐๘ and มาตรา ๑๐๙" — which is ม.๑๐๙'s header;
+(2) the ๒๔๔๕ tab's amended list, per-chapter bars and a "moved article" claim
+were all built on shifted tags. Caught only when a tooltip forced a look at the
+raw markup. → Address an article by its card: `id="art_N"`, and read its badge
+between that id and `<div class="article-body">`. Never infer ownership of a
+badge from proximity to the number.
+
 ---
 
 ## Known-good baseline
