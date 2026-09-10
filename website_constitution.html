@@ -1956,6 +1956,7 @@ function playAudioMobile(btn, src) {
           <button class="db-tab-btn active" onclick="switchTab('history-tab', this)" style="border-color:rgba(250,204,21,0.6);color:#facc15;">📜 ประวัติศาสตร์ประชาธิปไตย</button>
           <button class="db-tab-btn" onclick="switchTab('referendum-tab', this)" style="border-color:rgba(251,146,60,0.6);color:#fb923c;">🗳️ มหากาพย์ประชามติ ๕ รอบ</button>
           <button class="db-tab-btn" onclick="switchTab('constitutions-tab', this)" style="border-color:rgba(234,179,8,0.6);color:#fde047;">📜 รัฐธรรมนูญ ๓ ฉบับหลัก</button>
+          <button class="db-tab-btn" onclick="switchTab('chapter-map-tab', this)" style="border-color:rgba(212,168,67,0.6);color:#d4a843;">🗺️ แผนที่ ๓๘ หมวด</button>
           <button class="db-tab-btn" onclick="switchTab('early-const-tab', this)" style="border-color:rgba(245,158,11,0.6);color:#fbbf24;">📜 รธน. ฉบับปฐมเวลา (๒๓๗๕)</button>
         </div>
       </div>
@@ -2764,7 +2765,7 @@ function playAudioMobile(btn, src) {
 
       <div style="background:rgba(250,204,21,0.05); border:1px solid rgba(250,204,21,0.26); border-left:4px solid #facc15; border-radius:10px; padding:15px 19px; margin-bottom:24px;">
         <div style="font-size:13px; color:#fde047; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:7px;">🧭 แต่ละรอบลงมติเรื่องอะไร</div>
-        <p style="font-size:12.5px; color:var(--text-muted); line-height:1.85; margin:0;">การลงประชามติแบ่งตามกลุ่มหมวดของร่าง มิใช่ลงมติรวดเดียวทั้งฉบับ &mdash; <strong style="color:#fef08a;">รอบที่ ๑</strong> รับหลักการและตั้ง สสร. &middot; <strong style="color:#fef08a;">รอบที่ ๒</strong> หมวด ๑-๑๖ โครงสร้างอำนาจรัฐ &middot; <strong style="color:#fef08a;">รอบที่ ๓</strong> หมวด ๑๗-๒๖ สิทธิเสรีภาพขั้นก้าวหน้า &middot; <strong style="color:#fef08a;">รอบที่ ๔</strong> หมวด ๒๗-๓๖ กลไกตรวจสอบ &middot; <strong style="color:#fef08a;">รอบที่ ๕</strong> หมวด ๓๗-๓๘ หมวดพิเศษอำนาจสูงสุดพิทักษ์ประชาชน ประชาชนจึงเห็นชอบหรือคัดค้านได้เป็นส่วน ๆ โดยไม่ต้องคว่ำทั้งฉบับ</p>
+        <p style="font-size:12.5px; color:var(--text-muted); line-height:1.85; margin:0;">การลงประชามติแบ่งตามกลุ่มหมวดของร่าง มิใช่ลงมติรวดเดียวทั้งฉบับ &mdash; <strong style="color:#fef08a;">รอบที่ ๑</strong> รับหลักการและตั้ง สสร. &middot; <strong style="color:#fef08a;">รอบที่ ๒</strong> หมวด ๑-๑๖ โครงสร้างอำนาจรัฐ &middot; <strong style="color:#fef08a;">รอบที่ ๓</strong> หมวด ๑๗-๒๖ สิทธิเสรีภาพขั้นก้าวหน้า &middot; <strong style="color:#fef08a;">รอบที่ ๔</strong> หมวด ๒๗-๓๖ กลไกตรวจสอบ &middot; <strong style="color:#fef08a;">รอบที่ ๕</strong> หมวดพิเศษ อำนาจสูงสุดพิทักษ์ประชาชน ๘ มาตรา ประชาชนจึงเห็นชอบหรือคัดค้านได้เป็นส่วน ๆ โดยไม่ต้องคว่ำทั้งฉบับ</p>
       </div>
 
 
@@ -3148,7 +3149,7 @@ function playAudioMobile(btn, src) {
                 </tr>
                 <tr>
                   <td style="padding:9px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:#86efac; font-weight:800; font-family:'Outfit',sans-serif; text-align:center;">๕</td>
-                  <td style="padding:9px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.5px;">หมวด ๓๗-๓๘ หมวดพิเศษพิทักษ์ประชาชน</td>
+                  <td style="padding:9px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.5px;">หมวดพิเศษ อำนาจสูงสุดพิทักษ์ประชาชน</td>
                   <td style="padding:9px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text); text-align:right; font-size:12.5px;">๘๑.๖%</td>
                   <td style="padding:9px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:#4ade80; text-align:right; font-weight:700; font-size:12.5px;">๙๓.๓%</td>
                   <td style="padding:9px 10px; border-bottom:1px solid rgba(255,255,255,0.06); color:#f87171; text-align:right; font-size:12.5px;">๖.๗%</td>
@@ -3481,6 +3482,350 @@ function playAudioMobile(btn, src) {
       <div style="background:rgba(250,204,21,0.05); border:1px solid rgba(250,204,21,0.26); border-left:4px solid #facc15; border-radius:10px; padding:16px 20px; margin-top:20px;">
         <div style="font-size:13.5px; color:#fde047; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:8px;">🛡️ เหตุใดจึงมีเพียง ๓ ฉบับ</div>
         <p style="font-size:12.5px; color:var(--text-muted); line-height:1.85; margin:0;">ประเทศที่ผ่านการรัฐประหารมักมีรัฐธรรมนูญหลายสิบฉบับ เพราะทุกครั้งที่มีการยึดอำนาจ ฉบับเดิมจะถูกฉีกทิ้งและร่างใหม่ &mdash; แต่ในประวัติศาสตร์นี้ไม่เคยมีการฉีกรัฐธรรมนูญแม้แต่ครั้งเดียว การเปลี่ยนฉบับทั้งสองครั้งจึงเกิดจาก<strong style="color:#fef08a;">การตัดสินใจของรัฐสภาและประชาชน</strong>ว่าฉบับเดิมเล็กเกินไปสำหรับยุคสมัยใหม่ มิใช่จากการล้มล้างโดยกำลัง หลักการนี้ต่อมาถูกเขียนลงเป็น <strong style="color:#fef08a;">มาตรา ๘๐๑</strong> ซึ่งห้ามการรัฐประหารและการยกเลิกรัฐธรรมนูญโดยเด็ดขาด</p>
+      </div>
+
+    </div>
+
+    <div id="chapter-map-tab" class="db-tab-content">
+
+      <div style="text-align:left;">
+
+        <div style="display:flex; align-items:center; gap:18px; margin-bottom:22px; border-bottom:2px solid rgba(212,168,67,0.4); background:linear-gradient(135deg, rgba(212,168,67,0.15) 0%, rgba(15,23,42,0.95) 100%); padding:24px; border-radius:18px; box-shadow:0 8px 24px rgba(0,0,0,0.4);">
+          <div style="width:76px; height:76px; background:rgba(212,168,67,0.2); border:2px solid var(--gold); border-radius:20px; display:flex; align-items:center; justify-content:center; font-size:40px; box-shadow:0 0 24px rgba(212,168,67,0.35); flex-shrink:0;">🗺️</div>
+          <div style="flex:1;">
+            <h3 style="color:var(--gold-light); font-family:'Outfit',sans-serif; margin:0 0 6px 0; font-size:25px; font-weight:800;">แผนที่รัฐธรรมนูญ ๓๘ หมวด</h3>
+            <p style="color:var(--text-muted); font-size:14px; margin:0; line-height:1.6;">โครงทั้งฉบับในหน้าเดียว &mdash; <strong style="color:var(--gold-light);">๓๖ หมวด + บทเฉพาะกาล + หมวดพิเศษ</strong> รวม <strong style="color:var(--gold-light);">๑,๑๕๙ มาตรา</strong> จัดกลุ่มตามรอบประชามติที่รับรองแต่ละส่วน</p>
+          </div>
+        </div>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:12px; margin-bottom:22px;">
+          <div style="background:rgba(15,18,25,0.6); border:1px solid rgba(212,168,67,0.28); border-radius:12px; padding:15px 17px; text-align:center;">
+            <div style="font-family:'Outfit',sans-serif; font-size:24px; font-weight:800; color:var(--gold-light);">๑,๑๕๙</div>
+            <div style="font-size:11.5px; color:var(--text-muted); margin-top:5px; line-height:1.6;">มาตราทั้งฉบับ</div>
+          </div>
+          <div style="background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.28); border-radius:12px; padding:15px 17px; text-align:center;">
+            <div style="font-family:'Outfit',sans-serif; font-size:24px; font-weight:800; color:#60a5fa;">หมวด ๖</div>
+            <div style="font-size:11.5px; color:var(--text-muted); margin-top:5px; line-height:1.6;">หมวดที่ยาวที่สุด &mdash; รัฐสภา (๙๗ มาตรา)</div>
+          </div>
+          <div style="background:rgba(15,18,25,0.6); border:1px solid rgba(248,113,113,0.28); border-radius:12px; padding:15px 17px; text-align:center;">
+            <div style="font-family:'Outfit',sans-serif; font-size:24px; font-weight:800; color:#f87171;">หมวด ๑๑ และ ๑๒</div>
+            <div style="font-size:11.5px; color:var(--text-muted); margin-top:5px; line-height:1.6;">หมวดที่สั้นที่สุด &mdash; มาตราเดียวทั้งหมวด</div>
+          </div>
+          <div style="background:rgba(15,18,25,0.6); border:1px solid rgba(192,132,252,0.28); border-radius:12px; padding:15px 17px; text-align:center;">
+            <div style="font-family:'Outfit',sans-serif; font-size:24px; font-weight:800; color:#c084fc;">๘ มาตรา</div>
+            <div style="font-size:11.5px; color:var(--text-muted); margin-top:5px; line-height:1.6;">หมวดพิเศษ ที่ประชาชนลงมติแยกเป็นรอบของตัวเอง</div>
+          </div>
+        </div>
+
+        <div style="background:linear-gradient(135deg, rgba(96,165,250,0.06) 0%, rgba(15,18,25,0.7) 100%); border:1px solid rgba(96,165,250,0.28); border-radius:14px; padding:18px 20px; margin-bottom:16px;">
+          <div style="display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:8px; margin-bottom:14px;">
+            <div>
+              <div style="font-family:'Outfit',sans-serif; font-size:15px; font-weight:800; color:#60a5fa;">รับรองในประชามติรอบที่ ๒</div>
+              <div style="font-size:12px; color:var(--text-muted); margin-top:2px;">โครงสร้างอำนาจรัฐ</div>
+            </div>
+            <div style="font-size:12px; color:#60a5fa; font-weight:800; font-family:'Outfit',sans-serif;">๑๗ หมวด &middot; ๓๕๙ มาตรา</div>
+          </div>
+          <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(215px,1fr)); gap:10px;"><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.22); border-left:3px solid #60a5fa; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#60a5fa; white-space:nowrap;">หมวด ๑</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๑-๗</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">บททั่วไป</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๗ มาตรา</div>
+            </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.22); border-left:3px solid #60a5fa; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#60a5fa; white-space:nowrap;">หมวด ๒</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๘-๒๕</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">พระมหากษัตริย์</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๑๘ มาตรา</div>
+            </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.22); border-left:3px solid #60a5fa; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#60a5fa; white-space:nowrap;">หมวด ๓</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๒๖-๖๖</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">สิทธิและเสรีภาพของชนชาวไทย</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๔๑ มาตรา</div>
+            </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.22); border-left:3px solid #60a5fa; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#60a5fa; white-space:nowrap;">หมวด ๔</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๖๗-๗๑</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">หน้าที่ของชนชาวไทย</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๕ มาตรา</div>
+            </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.22); border-left:3px solid #60a5fa; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#60a5fa; white-space:nowrap;">หมวด ๕</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๗๒-๙๐</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">แนวนโยบายพื้นฐานแห่งรัฐ</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๑๙ มาตรา</div>
+            </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.22); border-left:3px solid #60a5fa; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#60a5fa; white-space:nowrap;">หมวด ๖</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๙๑-๑๘๗</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">รัฐสภา</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๙๗ มาตรา</div>
+            </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.22); border-left:3px solid #60a5fa; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#60a5fa; white-space:nowrap;">หมวด ๗</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๑๘๘-๒๑๙</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">คณะรัฐมนตรี</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๓๒ มาตรา</div>
+            </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.22); border-left:3px solid #60a5fa; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#60a5fa; white-space:nowrap;">หมวด ๘</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๒๒๐-๒๖๘</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">ศาล</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๔๙ มาตรา</div>
+            </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.22); border-left:3px solid #60a5fa; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#60a5fa; white-space:nowrap;">หมวด ๙</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๒๖๙-๒๗๗</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">การปกครองส่วนท้องถิ่น</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๙ มาตรา</div>
+            </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.22); border-left:3px solid #60a5fa; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#60a5fa; white-space:nowrap;">หมวด ๑๐</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๒๗๘-๒๙๓</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">การตรวจสอบการใช้อำนาจรัฐ</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๑๖ มาตรา</div>
+            </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.22); border-left:3px solid #60a5fa; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#60a5fa; white-space:nowrap;">หมวด ๑๑</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๒๙๔-๒๙๔</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">การตรวจเงินแผ่นดิน</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๑ มาตรา</div>
+            </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.22); border-left:3px solid #60a5fa; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#60a5fa; white-space:nowrap;">หมวด ๑๒</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๒๙๕-๒๙๕</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">การแก้ไขเพิ่มเติมรัฐธรรมนูญ</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๑ มาตรา</div>
+            </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.22); border-left:3px solid #60a5fa; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#60a5fa; white-space:nowrap;">หมวด ๑๓</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๒๙๖-๒๙๘</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">การขัดกันแห่งผลประโยชน์</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๓ มาตรา</div>
+            </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.22); border-left:3px solid #60a5fa; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#60a5fa; white-space:nowrap;">หมวด ๑๔</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๒๙๙-๓๐๕</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">การปฏิรูปประเทศ</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๗ มาตรา</div>
+            </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.22); border-left:3px solid #60a5fa; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#60a5fa; white-space:nowrap;">หมวด ๑๕</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๓๐๖-๓๐๙</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">องค์กรอัยการ</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๔ มาตรา</div>
+            </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.22); border-left:3px solid #60a5fa; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#60a5fa; white-space:nowrap;">หมวด ๑๖</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๓๑๐-๓๓๖</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">องค์กรอิสระ</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๒๗ มาตรา</div>
+            </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(96,165,250,0.5); border-left:3px solid #60a5fa; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#60a5fa; white-space:nowrap;">บทเฉพาะกาล</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๓๓๗-๓๕๙</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">บทเฉพาะกาล</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๒๓ มาตรา</div>
+            </div></div>
+        </div><div style="background:linear-gradient(135deg, rgba(74,222,128,0.06) 0%, rgba(15,18,25,0.7) 100%); border:1px solid rgba(74,222,128,0.28); border-radius:14px; padding:18px 20px; margin-bottom:16px;">
+          <div style="display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:8px; margin-bottom:14px;">
+            <div>
+              <div style="font-family:'Outfit',sans-serif; font-size:15px; font-weight:800; color:#4ade80;">รับรองในประชามติรอบที่ ๓</div>
+              <div style="font-size:12px; color:var(--text-muted); margin-top:2px;">สิทธิเสรีภาพขั้นก้าวหน้า</div>
+            </div>
+            <div style="font-size:12px; color:#4ade80; font-weight:800; font-family:'Outfit',sans-serif;">๑๐ หมวด &middot; ๔๐๐ มาตรา</div>
+          </div>
+          <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(215px,1fr)); gap:10px;"><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(74,222,128,0.22); border-left:3px solid #4ade80; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#4ade80; white-space:nowrap;">หมวด ๑๗</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๓๖๐-๓๙๙</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">สิทธิชุมชนและการมีส่วนร่วมภาคประชาชน</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๔๐ มาตรา</div>
+            </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(74,222,128,0.22); border-left:3px solid #4ade80; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#4ade80; white-space:nowrap;">หมวด ๑๘</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๔๐๐-๔๓๙</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">สิทธิแรงงานและการคุ้มครองผู้ใช้แรงงาน</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๔๐ มาตรา</div>
+            </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(74,222,128,0.22); border-left:3px solid #4ade80; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#4ade80; white-space:nowrap;">หมวด ๑๙</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๔๔๐-๔๗๙</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">สิทธิด้านสิ่งแวดล้อมและทรัพยากรธรรมชาติ</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๔๐ มาตรา</div>
+            </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(74,222,128,0.22); border-left:3px solid #4ade80; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#4ade80; white-space:nowrap;">หมวด ๒๐</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๔๘๐-๕๑๙</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">เทคโนโลยี นวัตกรรม และเศรษฐกิจดิจิทัล</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๔๐ มาตรา</div>
+            </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(74,222,128,0.22); border-left:3px solid #4ade80; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#4ade80; white-space:nowrap;">หมวด ๒๑</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๕๒๐-๕๕๙</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">ความมั่นคงทางอาหารและการเกษตร</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๔๐ มาตรา</div>
+            </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(74,222,128,0.22); border-left:3px solid #4ade80; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#4ade80; white-space:nowrap;">หมวด ๒๒</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๕๖๐-๕๙๙</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">สิทธิเด็ก เยาวชน ผู้สูงอายุ และผู้พิการ</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๔๐ มาตรา</div>
+            </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(74,222,128,0.22); border-left:3px solid #4ade80; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#4ade80; white-space:nowrap;">หมวด ๒๓</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๖๐๐-๖๓๙</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">การศึกษา วิทยาศาสตร์ และวิจัย</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๔๐ มาตรา</div>
+            </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(74,222,128,0.22); border-left:3px solid #4ade80; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#4ade80; white-space:nowrap;">หมวด ๒๔</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๖๔๐-๖๗๙</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">สาธารณสุขและระบบสุขภาพ</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๔๐ มาตรา</div>
+            </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(74,222,128,0.22); border-left:3px solid #4ade80; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#4ade80; white-space:nowrap;">หมวด ๒๕</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๖๘๐-๗๑๙</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">การต่อต้านการทุจริตและธรรมาภิบาล</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๔๐ มาตรา</div>
+            </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(74,222,128,0.22); border-left:3px solid #4ade80; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#4ade80; white-space:nowrap;">หมวด ๒๖</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๗๒๐-๗๕๙</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">สื่อมวลชน เสรีภาพสื่อ และข้อมูลข่าวสาร</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๔๐ มาตรา</div>
+            </div></div>
+        </div><div style="background:linear-gradient(135deg, rgba(251,146,60,0.06) 0%, rgba(15,18,25,0.7) 100%); border:1px solid rgba(251,146,60,0.28); border-radius:14px; padding:18px 20px; margin-bottom:16px;">
+          <div style="display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:8px; margin-bottom:14px;">
+            <div>
+              <div style="font-family:'Outfit',sans-serif; font-size:15px; font-weight:800; color:#fb923c;">รับรองในประชามติรอบที่ ๔</div>
+              <div style="font-size:12px; color:var(--text-muted); margin-top:2px;">กลไกตรวจสอบและความมั่นคง</div>
+            </div>
+            <div style="font-size:12px; color:#fb923c; font-weight:800; font-family:'Outfit',sans-serif;">๑๐ หมวด &middot; ๓๙๒ มาตรา</div>
+          </div>
+          <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(215px,1fr)); gap:10px;"><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(251,146,60,0.22); border-left:3px solid #fb923c; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#fb923c; white-space:nowrap;">หมวด ๒๗</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๗๖๐-๗๙๙</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">การคลัง งบประมาณ และเศรษฐกิจภาคประชาชน</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๔๐ มาตรา</div>
+            </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(251,146,60,0.22); border-left:3px solid #fb923c; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#fb923c; white-space:nowrap;">หมวด ๒๘</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๘๐๐-๘๓๙</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">กองทัพ ความมั่นคง และการควบคุมโดยพลเรือน</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๔๐ มาตรา</div>
+            </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(251,146,60,0.22); border-left:3px solid #fb923c; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#fb923c; white-space:nowrap;">หมวด ๒๙</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๘๔๐-๘๗๘</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">ความสัมพันธ์ระหว่างประเทศและสนธิสัญญา</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๓๙ มาตรา</div>
+            </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(251,146,60,0.22); border-left:3px solid #fb923c; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#fb923c; white-space:nowrap;">หมวด ๓๐</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๘๗๙-๙๑๗</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">สิทธิวัฒนธรรม ภาษา และชาติพันธุ์</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๓๙ มาตรา</div>
+            </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(251,146,60,0.22); border-left:3px solid #fb923c; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#fb923c; white-space:nowrap;">หมวด ๓๑</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๙๑๘-๙๕๖</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">ที่อยู่อาศัยและการพัฒนาเมือง</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๓๙ มาตรา</div>
+            </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(251,146,60,0.22); border-left:3px solid #fb923c; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#fb923c; white-space:nowrap;">หมวด ๓๒</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๙๕๗-๙๙๕</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">พลังงาน สาธารณูปโภค และการขนส่ง</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๓๙ มาตรา</div>
+            </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(251,146,60,0.22); border-left:3px solid #fb923c; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#fb923c; white-space:nowrap;">หมวด ๓๓</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๙๙๖-๑,๐๓๔</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">กีฬา นันทนาการ และการท่องเที่ยว</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๓๙ มาตรา</div>
+            </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(251,146,60,0.22); border-left:3px solid #fb923c; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#fb923c; white-space:nowrap;">หมวด ๓๔</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๑,๐๓๕-๑,๐๗๓</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">สถานการณ์ฉุกเฉินและภัยพิบัติ</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๓๙ มาตรา</div>
+            </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(251,146,60,0.22); border-left:3px solid #fb923c; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#fb923c; white-space:nowrap;">หมวด ๓๕</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๑,๐๗๔-๑,๑๑๒</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">ความยุติธรรมในระยะเปลี่ยนผ่าน</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๓๙ มาตรา</div>
+            </div><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(251,146,60,0.22); border-left:3px solid #fb923c; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#fb923c; white-space:nowrap;">หมวด ๓๖</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๑,๑๑๓-๑,๑๕๑</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">บทลงโทษและมาตรการบังคับตามรัฐธรรมนูญ</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๓๙ มาตรา</div>
+            </div></div>
+        </div><div style="background:linear-gradient(135deg, rgba(192,132,252,0.06) 0%, rgba(15,18,25,0.7) 100%); border:1px solid rgba(192,132,252,0.28); border-radius:14px; padding:18px 20px; margin-bottom:16px;">
+          <div style="display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:8px; margin-bottom:14px;">
+            <div>
+              <div style="font-family:'Outfit',sans-serif; font-size:15px; font-weight:800; color:#c084fc;">รับรองในประชามติรอบที่ ๕ (พิเศษ)</div>
+              <div style="font-size:12px; color:var(--text-muted); margin-top:2px;">อำนาจสูงสุดพิทักษ์ประชาชน</div>
+            </div>
+            <div style="font-size:12px; color:#c084fc; font-weight:800; font-family:'Outfit',sans-serif;">๑ หมวด &middot; ๘ มาตรา</div>
+          </div>
+          <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(215px,1fr)); gap:10px;"><div style="background:rgba(15,18,25,0.6); border:1px solid rgba(192,132,252,0.5); border-left:3px solid #c084fc; border-radius:9px; padding:11px 13px;">
+              <div style="display:flex; justify-content:space-between; align-items:baseline; gap:8px;">
+                <span style="font-family:'Outfit',sans-serif; font-size:11.5px; font-weight:800; color:#c084fc; white-space:nowrap;">หมวดพิเศษ</span>
+                <span style="font-size:10.5px; color:#64748b; white-space:nowrap;">ม.๑,๑๕๒-๑,๑๕๙</span>
+              </div>
+              <div style="font-size:12.5px; color:var(--text); margin-top:5px; line-height:1.5;">อำนาจสูงสุดพิทักษ์ประชาชน (The Supreme People’s Power)</div>
+              <div style="font-size:10.5px; color:#64748b; margin-top:4px;">๘ มาตรา</div>
+            </div></div>
+        </div>
+
+        <div style="background:rgba(250,204,21,0.05); border:1px solid rgba(250,204,21,0.26); border-left:4px solid #facc15; border-radius:10px; padding:16px 20px; margin-top:6px;">
+          <div style="font-size:13.5px; color:#fde047; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:8px;">🧭 อ่านแผนที่นี้อย่างไร</div>
+          <p style="font-size:12.5px; color:var(--text-muted); line-height:1.85; margin:0;">ลำดับหมวดเรียงตามลำดับมาตรา มิใช่ตามลำดับเวลาที่ร่าง &mdash; <strong style="color:#fef08a;">บทเฉพาะกาล</strong> จึงคั่นอยู่ระหว่างหมวด ๑๖ กับ ๑๗ เพราะเป็นส่วนท้ายของร่างชุดแรก ส่วนหมวด ๑๗ เป็นต้นไปคือส่วนที่เพิ่มเข้ามาในประชามติรอบหลัง สังเกตได้ว่าหมวด ๑๗-๒๖ มีหมวดละ ๔๐ มาตราเท่ากันพอดี และหมวด ๒๙-๓๖ มีหมวดละ ๓๙ มาตรา อันเป็นผลจากการจัดสรรพื้นที่ให้แต่ละหมวดอย่างเป็นระบบในชั้น สสร.</p>
+        </div>
+
       </div>
 
     </div>
