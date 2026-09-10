@@ -40878,12 +40878,12 @@ function playAudioMobile(btn, src) {
           text-align: center; color: rgba(212, 168, 67, 0.5);
           font-size: 18px; line-height: 1; margin: 6px 0;
         }
-        #military-chain-tab .coc-branch {
+        #military-chain-tab .coc-branch, #police-chain-tab .coc-branch {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
           gap: 12px;
         }
-        #military-chain-tab .coc-branch-card {
+        #military-chain-tab .coc-branch-card, #police-chain-tab .coc-branch-card {
           background: rgba(15, 18, 25, 0.6);
           border: 1px solid rgba(255, 255, 255, 0.08);
           border-top: 3px solid var(--gold);
@@ -41095,6 +41095,16 @@ function playAudioMobile(btn, src) {
           </div>
         </div>
 
+        <div style="background:linear-gradient(135deg, rgba(96,165,250,0.07) 0%, rgba(15,18,25,0.7) 100%); border:1px solid rgba(96,165,250,0.28); border-radius:14px; padding:20px 22px; margin-bottom:26px;">
+          <div style="font-size:15px; color:#93c5fd; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:12px;">📌 ประวัติและบทบาทของ ผบ.ตร. คนปัจจุบัน</div>
+          <div style="font-size:13.5px; color:var(--text-muted); line-height:1.95;">
+            &bull; <strong style="color:#93c5fd;">ยศและตำแหน่ง:</strong> พลตำรวจเอก &mdash; ยศสูงสุดของสายตำรวจ ดำรงตำแหน่งผู้บัญชาการตำรวจแห่งชาติ ผู้บังคับบัญชาสูงสุดฝ่ายตำรวจประจำการทั้งประเทศ<br>
+            &bull; <strong style="color:#93c5fd;">สายการรับผิดชอบ:</strong> ขึ้นตรงต่อนายกรัฐมนตรีเพียงผู้เดียว ไม่ผ่านรัฐมนตรีว่าการกระทรวงมหาดไทย ต่างจากสายทหารซึ่งมีรัฐมนตรีว่าการกระทรวงกลาโหมคั่นอยู่ในลำดับที่ ๓<br>
+            &bull; <strong style="color:#93c5fd;">บทบาทในเหตุการณ์ คปพทป.:</strong> ตลอดการชุมนุมของ <strong>คปพทป.</strong> ซึ่งมีผู้ร่วมชุมนุม ณ อนุสาวรีย์ประชาธิปไตยกว่า <strong style="color:#bfdbfe;">๑.๒๖ ล้านคน</strong> สำนักงานตำรวจแห่งชาติวางกำลังในภารกิจอำนวยความสะดวกและรักษาความปลอดภัยเท่านั้น ไม่มีการใช้กำลังเข้าสลายการชุมนุมแม้แต่ครั้งเดียว นับเป็นบทบาทคู่ขนานกับ<strong style="color:var(--gold-light);">การอารยะขัดขืนของสายทหาร</strong>ในเหตุการณ์เดียวกัน<br>
+            &bull; <strong style="color:#93c5fd;">ความรับผิดชอบต่อประชาชน:</strong> เป็นตำแหน่งที่ประชาชนผู้เป็นเจ้าของอำนาจอธิปไตยลงมติถอดถอนได้ทุกเมื่อ หากพบการทุจริตหรือการปฏิบัติหน้าที่โดยมิชอบ โดยไม่ต้องรอครบวาระ
+          </div>
+        </div>
+
         <div style="background:rgba(250,204,21,0.05); border:1px solid rgba(250,204,21,0.28); border-left:4px solid #facc15; border-radius:10px; padding:16px 20px; margin-bottom:26px;">
           <div style="font-size:13.5px; color:#fde047; font-weight:700; font-family:'Outfit',sans-serif; margin-bottom:8px;">🔗 ขึ้นตรงต่อนายกรัฐมนตรี ไม่ผ่านมหาดไทย</div>
           <p style="font-size:13px; color:var(--text-muted); line-height:1.8; margin:0;">สำนักงานตำรวจแห่งชาติขึ้นตรงต่อ <strong style="color:#fde047;">นายกรัฐมนตรี</strong> โดยไม่ผ่านกระทรวงมหาดไทย โครงสร้างเช่นนี้เป็นเหตุผลเชิงสถาบันที่ทำให้ในเหตุการณ์ชุมนุมของ <strong>คปพทป.</strong> กระทรวงมหาดไทยไม่มีอำนาจสั่งการกำลังตำรวจเข้าปราบปรามผู้ชุมนุมได้โดยตรง</p>
@@ -41143,6 +41153,37 @@ function playAudioMobile(btn, src) {
             <div class="coc-sub">บังคับบัญชาระดับกองบัญชาการ เช่น ตำรวจภูธรภาค หรือกองบัญชาการเฉพาะทาง</div>
           </div>
         </div>
+        <div style="background:rgba(15,18,25,0.35); border:1px dashed rgba(96,165,250,0.3); border-radius:12px; padding:14px; margin-top:10px;">
+          <div style="font-size:13px; color:#93c5fd; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:12px;">🏢 กองบัญชาการหลักในสังกัด (ระดับที่ ๕)</div>
+          <div class="coc-branch">
+            <div class="coc-branch-card" style="border-top-color:#60a5fa;">
+              <div style="font-size:24px; margin-bottom:6px;">🏙️</div>
+              <div style="font-family:'Outfit',sans-serif; font-weight:700; color:#60a5fa; font-size:14.5px;">บช.น.</div>
+              <div style="font-size:12px; color:var(--text-muted); margin-top:4px; line-height:1.55;">กองบัญชาการตำรวจนครบาล<br><span style="opacity:0.75;">รับผิดชอบพื้นที่กรุงเทพมหานครทั้งหมด</span></div>
+            </div>
+            <div class="coc-branch-card" style="border-top-color:#4ade80;">
+              <div style="font-size:24px; margin-bottom:6px;">🗺️</div>
+              <div style="font-family:'Outfit',sans-serif; font-weight:700; color:#4ade80; font-size:14.5px;">ภ.๑-๙</div>
+              <div style="font-size:12px; color:var(--text-muted); margin-top:4px; line-height:1.55;">ตำรวจภูธรภาค ๑-๙<br><span style="opacity:0.75;">แบ่งความรับผิดชอบตามภูมิภาคทั่วประเทศ</span></div>
+            </div>
+            <div class="coc-branch-card" style="border-top-color:#fbbf24;">
+              <div style="font-size:24px; margin-bottom:6px;">🔍</div>
+              <div style="font-family:'Outfit',sans-serif; font-weight:700; color:#fbbf24; font-size:14.5px;">บช.ก.</div>
+              <div style="font-size:12px; color:var(--text-muted); margin-top:4px; line-height:1.55;">กองบัญชาการตำรวจสอบสวนกลาง<br><span style="opacity:0.75;">คดีสำคัญและคดีที่มีผลกระทบข้ามพื้นที่</span></div>
+            </div>
+            <div class="coc-branch-card" style="border-top-color:#a5b4fc;">
+              <div style="font-size:24px; margin-bottom:6px;">🏔️</div>
+              <div style="font-family:'Outfit',sans-serif; font-weight:700; color:#a5b4fc; font-size:14.5px;">บช.ตชด.</div>
+              <div style="font-size:12px; color:var(--text-muted); margin-top:4px; line-height:1.55;">กองบัญชาการตำรวจตระเวนชายแดน<br><span style="opacity:0.75;">ความมั่นคงตามแนวชายแดนและพื้นที่ห่างไกล</span></div>
+            </div>
+            <div class="coc-branch-card" style="border-top-color:#f472b6;">
+              <div style="font-size:24px; margin-bottom:6px;">🚫</div>
+              <div style="font-family:'Outfit',sans-serif; font-weight:700; color:#f472b6; font-size:14.5px;">บช.ปส.</div>
+              <div style="font-size:12px; color:var(--text-muted); margin-top:4px; line-height:1.55;">กองบัญชาการตำรวจปราบปรามยาเสพติด<br><span style="opacity:0.75;">ภารกิจเฉพาะทางด้านยาเสพติด</span></div>
+            </div>
+          </div>
+        </div>
+
         <div class="coc-arrow" style="color:rgba(96,165,250,0.5);">▼</div>
 
         <div class="coc-level" style="border-left-color:#60a5fa;">
@@ -41213,6 +41254,115 @@ function playAudioMobile(btn, src) {
           <div>
             <div class="coc-title" style="color:#cbd5e1;">👥 ผู้บังคับหมู่ (ผบ.หมู่)</div>
             <div class="coc-sub">หน่วยบังคับบัญชาระดับเล็กที่สุดของสายตำรวจ ปฏิบัติงานใกล้ชิดประชาชนมากที่สุด</div>
+          </div>
+        </div>
+
+        <div style="background:linear-gradient(135deg, rgba(96,165,250,0.08) 0%, rgba(15,18,25,0.7) 100%); border:1px solid rgba(96,165,250,0.28); border-radius:14px; padding:20px 22px; margin-top:26px;">
+          <div style="font-size:15px; color:#93c5fd; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:6px;">🎖️ ชั้นยศตำรวจและตำแหน่งที่สอดคล้องกัน</div>
+          <p style="font-size:12.5px; color:var(--text-muted); line-height:1.75; margin:0 0 16px 0;">สายบังคับบัญชา ๑๓ ระดับข้างต้นคือ <strong style="color:#bfdbfe;">ตำแหน่ง</strong> ส่วนตารางนี้คือ <strong style="color:#bfdbfe;">ยศ</strong> ซึ่งเป็นคนละระบบกันแต่เดินคู่ขนานไป ผู้ดำรงตำแหน่งหนึ่งอาจมียศได้มากกว่าหนึ่งชั้น</p>
+          <div style="margin-bottom:16px;">
+            <div style="font-size:13px; color:#93c5fd; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:8px;">ชั้นนายพล</div>
+            <div style="overflow-x:auto;">
+            <table style="width:100%; border-collapse:collapse; min-width:520px;">
+              <tr>
+                <th style="text-align:left; padding:8px 12px; border-bottom:1.5px solid rgba(96,165,250,0.35); color:#93c5fd; font-size:11.5px; letter-spacing:0.4px; font-family:'Outfit',sans-serif;">ยศย่อ</th>
+                <th style="text-align:left; padding:8px 12px; border-bottom:1.5px solid rgba(96,165,250,0.35); color:#93c5fd; font-size:11.5px; letter-spacing:0.4px; font-family:'Outfit',sans-serif;">ยศเต็ม</th>
+                <th style="text-align:left; padding:8px 12px; border-bottom:1.5px solid rgba(96,165,250,0.35); color:#93c5fd; font-size:11.5px; letter-spacing:0.4px; font-family:'Outfit',sans-serif;">ตำแหน่งที่มักดำรง</th>
+              </tr>
+              <tr>
+                <td style="padding:9px 12px; border-bottom:1px solid rgba(255,255,255,0.06); color:#93c5fd; font-weight:800; font-family:'Outfit',sans-serif; font-size:13px; white-space:nowrap;">พล.ต.อ.</td>
+                <td style="padding:9px 12px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text); font-size:13px;">พลตำรวจเอก</td>
+                <td style="padding:9px 12px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.5px;">ผบ.ตร. / รอง ผบ.ตร. / จเรตำรวจแห่งชาติ</td>
+              </tr>
+              <tr>
+                <td style="padding:9px 12px; border-bottom:1px solid rgba(255,255,255,0.06); color:#93c5fd; font-weight:800; font-family:'Outfit',sans-serif; font-size:13px; white-space:nowrap;">พล.ต.ท.</td>
+                <td style="padding:9px 12px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text); font-size:13px;">พลตำรวจโท</td>
+                <td style="padding:9px 12px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.5px;">ผู้ช่วย ผบ.ตร. / ผู้บัญชาการ (ผบช.)</td>
+              </tr>
+              <tr>
+                <td style="padding:9px 12px; border-bottom:1px solid rgba(255,255,255,0.06); color:#93c5fd; font-weight:800; font-family:'Outfit',sans-serif; font-size:13px; white-space:nowrap;">พล.ต.ต.</td>
+                <td style="padding:9px 12px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text); font-size:13px;">พลตำรวจตรี</td>
+                <td style="padding:9px 12px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.5px;">รองผู้บัญชาการ / ผู้บังคับการ (ผบก.)</td>
+              </tr>
+            </table>
+            </div>
+          </div>
+          <div style="margin-bottom:16px;">
+            <div style="font-size:13px; color:#bfdbfe; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:8px;">ชั้นสัญญาบัตร</div>
+            <div style="overflow-x:auto;">
+            <table style="width:100%; border-collapse:collapse; min-width:520px;">
+              <tr>
+                <th style="text-align:left; padding:8px 12px; border-bottom:1.5px solid rgba(96,165,250,0.35); color:#93c5fd; font-size:11.5px; letter-spacing:0.4px; font-family:'Outfit',sans-serif;">ยศย่อ</th>
+                <th style="text-align:left; padding:8px 12px; border-bottom:1.5px solid rgba(96,165,250,0.35); color:#93c5fd; font-size:11.5px; letter-spacing:0.4px; font-family:'Outfit',sans-serif;">ยศเต็ม</th>
+                <th style="text-align:left; padding:8px 12px; border-bottom:1.5px solid rgba(96,165,250,0.35); color:#93c5fd; font-size:11.5px; letter-spacing:0.4px; font-family:'Outfit',sans-serif;">ตำแหน่งที่มักดำรง</th>
+              </tr>
+              <tr>
+                <td style="padding:9px 12px; border-bottom:1px solid rgba(255,255,255,0.06); color:#bfdbfe; font-weight:800; font-family:'Outfit',sans-serif; font-size:13px; white-space:nowrap;">พ.ต.อ.</td>
+                <td style="padding:9px 12px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text); font-size:13px;">พันตำรวจเอก</td>
+                <td style="padding:9px 12px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.5px;">รองผู้บังคับการ / ผู้กำกับการ (ผกก.)</td>
+              </tr>
+              <tr>
+                <td style="padding:9px 12px; border-bottom:1px solid rgba(255,255,255,0.06); color:#bfdbfe; font-weight:800; font-family:'Outfit',sans-serif; font-size:13px; white-space:nowrap;">พ.ต.ท.</td>
+                <td style="padding:9px 12px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text); font-size:13px;">พันตำรวจโท</td>
+                <td style="padding:9px 12px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.5px;">รองผู้กำกับการ (รอง ผกก.)</td>
+              </tr>
+              <tr>
+                <td style="padding:9px 12px; border-bottom:1px solid rgba(255,255,255,0.06); color:#bfdbfe; font-weight:800; font-family:'Outfit',sans-serif; font-size:13px; white-space:nowrap;">พ.ต.ต.</td>
+                <td style="padding:9px 12px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text); font-size:13px;">พันตำรวจตรี</td>
+                <td style="padding:9px 12px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.5px;">สารวัตร (สว.)</td>
+              </tr>
+              <tr>
+                <td style="padding:9px 12px; border-bottom:1px solid rgba(255,255,255,0.06); color:#bfdbfe; font-weight:800; font-family:'Outfit',sans-serif; font-size:13px; white-space:nowrap;">ร.ต.อ. / ร.ต.ท. / ร.ต.ต.</td>
+                <td style="padding:9px 12px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text); font-size:13px;">ร้อยตำรวจเอก / โท / ตรี</td>
+                <td style="padding:9px 12px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.5px;">รองสารวัตร (รอง สว.)</td>
+              </tr>
+            </table>
+            </div>
+          </div>
+          <div style="margin-bottom:16px;">
+            <div style="font-size:13px; color:#cbd5e1; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:8px;">ชั้นประทวน</div>
+            <div style="overflow-x:auto;">
+            <table style="width:100%; border-collapse:collapse; min-width:520px;">
+              <tr>
+                <th style="text-align:left; padding:8px 12px; border-bottom:1.5px solid rgba(96,165,250,0.35); color:#93c5fd; font-size:11.5px; letter-spacing:0.4px; font-family:'Outfit',sans-serif;">ยศย่อ</th>
+                <th style="text-align:left; padding:8px 12px; border-bottom:1.5px solid rgba(96,165,250,0.35); color:#93c5fd; font-size:11.5px; letter-spacing:0.4px; font-family:'Outfit',sans-serif;">ยศเต็ม</th>
+                <th style="text-align:left; padding:8px 12px; border-bottom:1.5px solid rgba(96,165,250,0.35); color:#93c5fd; font-size:11.5px; letter-spacing:0.4px; font-family:'Outfit',sans-serif;">ตำแหน่งที่มักดำรง</th>
+              </tr>
+              <tr>
+                <td style="padding:9px 12px; border-bottom:1px solid rgba(255,255,255,0.06); color:#cbd5e1; font-weight:800; font-family:'Outfit',sans-serif; font-size:13px; white-space:nowrap;">ด.ต.</td>
+                <td style="padding:9px 12px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text); font-size:13px;">ดาบตำรวจ</td>
+                <td style="padding:9px 12px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.5px;">ผู้บังคับหมู่ (ผบ.หมู่)</td>
+              </tr>
+              <tr>
+                <td style="padding:9px 12px; border-bottom:1px solid rgba(255,255,255,0.06); color:#cbd5e1; font-weight:800; font-family:'Outfit',sans-serif; font-size:13px; white-space:nowrap;">จ.ส.ต.</td>
+                <td style="padding:9px 12px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text); font-size:13px;">จ่าสิบตำรวจ</td>
+                <td style="padding:9px 12px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.5px;">ผู้บังคับหมู่ / รองผู้บังคับหมู่</td>
+              </tr>
+              <tr>
+                <td style="padding:9px 12px; border-bottom:1px solid rgba(255,255,255,0.06); color:#cbd5e1; font-weight:800; font-family:'Outfit',sans-serif; font-size:13px; white-space:nowrap;">ส.ต.อ. / ส.ต.ท. / ส.ต.ต.</td>
+                <td style="padding:9px 12px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text); font-size:13px;">สิบตำรวจเอก / โท / ตรี</td>
+                <td style="padding:9px 12px; border-bottom:1px solid rgba(255,255,255,0.06); color:var(--text-muted); font-size:12.5px;">ผู้ปฏิบัติงานประจำหมู่</td>
+              </tr>
+            </table>
+            </div>
+          </div>
+        </div>
+
+        <div style="background:linear-gradient(135deg, rgba(250,204,21,0.07) 0%, rgba(15,18,25,0.7) 100%); border:1px solid rgba(250,204,21,0.28); border-radius:14px; padding:20px 22px; margin-top:22px;">
+          <div style="font-size:15px; color:#fde047; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:12px;">✊ บทบาทในเหตุการณ์ คปพทป.</div>
+          <div style="font-size:13.5px; color:var(--text-muted); line-height:1.95;">
+            &bull; <strong style="color:#fde047;">เหตุใดจึงไม่มีการสลายการชุมนุม:</strong> เหตุผลเชิงสถาบันคือโครงสร้างในหน้านี้เอง &mdash; เมื่อสำนักงานตำรวจแห่งชาติขึ้นตรงต่อนายกรัฐมนตรี กระทรวงมหาดไทยจึงไม่มีอำนาจสั่งการกำลังตำรวจได้โดยตรง คำสั่งปราบปรามจึงไม่อาจออกจากช่องทางอื่นนอกจากหัวหน้ารัฐบาลเอง<br>
+            &bull; <strong style="color:#fde047;">ขนาดของการชุมนุม:</strong> ผู้ชุมนุม ณ สถานที่จริง <strong style="color:#fef08a;">๑.๒๖ ล้านคน</strong> และร่วมเคลื่อนไหวออนไลน์อีก <strong style="color:#fef08a;">๑๐.๙ ล้านคน</strong> รวมกว่า <strong style="color:#fef08a;">๑๒.๑๖ ล้านคน</strong> โดยไม่มีผู้เสียชีวิตจากการปฏิบัติของเจ้าหน้าที่รัฐ<br>
+            &bull; <strong style="color:#fde047;">ผลต่อหลักการ:</strong> เหตุการณ์นี้กลายเป็นบรรทัดฐานว่ากำลังตำรวจเป็นเครื่องมือรักษาความสงบของประชาชน มิใช่เครื่องมือรักษาอำนาจของรัฐบาล
+          </div>
+        </div>
+
+        <div style="background:linear-gradient(135deg, rgba(168,85,247,0.07) 0%, rgba(15,18,25,0.7) 100%); border:1px solid rgba(168,85,247,0.28); border-radius:14px; padding:20px 22px; margin-top:22px;">
+          <div style="font-size:15px; color:#c084fc; font-weight:800; font-family:'Outfit',sans-serif; margin-bottom:12px;">📜 ฐานทางรัฐธรรมนูญและการตรวจสอบ</div>
+          <div style="font-size:13.5px; color:var(--text-muted); line-height:1.95;">
+            &bull; <strong style="color:#c084fc;">มาตรา ๘๐๐:</strong> รับรองสิทธิพื้นฐานของประชาชนในการควบคุมกองกำลังของรัฐโดยรัฐบาลพลเรือน หลักการเดียวกันนี้เป็นเหตุให้ทั้งสายทหารและสายตำรวจบรรจบกันที่นายกรัฐมนตรีผู้มาจากการเลือกตั้ง<br>
+            &bull; <strong style="color:#c084fc;">การถอดถอนโดยประชาชน:</strong> ตำแหน่ง ผบ.ตร. เปิดให้ประชาชนลงมติถอดถอนได้ทุกเมื่อเมื่อพบการทุจริตหรือการใช้อำนาจโดยมิชอบ ต่างจากระบบที่ให้ผู้บังคับบัญชาตรวจสอบกันเองภายใน<br>
+            &bull; <strong style="color:#c084fc;">จเรตำรวจแห่งชาติ:</strong> ลำดับที่ ๓ ของสายบังคับบัญชา ทำหน้าที่ตรวจสอบภายในองค์กรควบคู่ไปกับการตรวจสอบจากภายนอกโดยองค์กรอิสระตามรัฐธรรมนูญ
           </div>
         </div>
 
