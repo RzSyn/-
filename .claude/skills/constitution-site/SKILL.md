@@ -6,7 +6,7 @@ description: Working rules for the รัฐธรรมนุญจำลอง
 # รัฐธรรมนุญจำลอง — working rules
 
 Fictional worldbuilding site: a simulated Thai constitution, 38 chapters plus a
-43-tab dashboard. Invented history, PMs, parties and institutions are
+46-tab dashboard. Invented history, PMs, parties and institutions are
 **intentional**. Never "correct" them toward real-world facts.
 
 Almost everything lives in one file: `website_constitution.html`
@@ -79,8 +79,8 @@ print(f"buttons {len(buttons)} == panels: {buttons == set(spans)}")
 **Expected healthy output:**
 
 ```
-unclosed 2 | stray 0 | panels 43 | overlaps []
-buttons 43 == panels: True
+unclosed 2 | stray 0 | panels 46 | overlaps []
+buttons 46 == panels: True
 ```
 
 - `unclosed 2` is correct and expected — `dashboard-card` and `preamble-section`
@@ -441,13 +441,25 @@ break in the first place.
 error files with real 320px PNG flag thumbnails from Wikipedia". It replaced
 real files with error pages. Read the bytes, not the subject line.
 
+**Derived a structure from a count instead of reading it.** Wrote that
+referendum round 5 ratified "หมวด ๓๗-๓๘" because the site says ๓๘ หมวด. No
+such chapters exist: the charter is หมวด ๑-๓๖ + บทเฉพาะกาล + หมวดพิเศษ
+(ม.๑๑๕๒-๑๑๕๙). Then labelled the chapter map's rounds from the referendum tab's
+prose ("รอบที่ ๔") when every article carries its own tag
+("ประชามติรอบที่ ๔-๕"). → RULE 5: the per-article tags and the `<h>` headings
+are the source of truth; extract them, don't infer them.
+
+**Changed an emoji that appears in two tabs.** `🇪🇺 สหพันธรัฐใหม่ (TSL)`
+occurs on geopolitics-tab and on world-economy-tab ("TSL / EU"); the assert
+caught the second copy. Scope replacements to one panel's span.
+
 ---
 
 ## Known-good baseline
 
 ```
-unclosed 2 (dashboard-card, preamble-section) | stray 0 | panels 43 | overlaps []
-buttons 43 == panels: True
+unclosed 2 (dashboard-card, preamble-section) | stray 0 | panels 46 | overlaps []
+buttons 46 == panels: True
 13 inline <script> blocks, all pass node --check
 0 broken local references
 pms-tab: 34 rows (1 header + 33 PMs), every row 7 cells
