@@ -461,6 +461,16 @@ and flavour text can be invented on "คิดขึ้นมาเองได�
 characters is the user's to cast. Also: use the site's spelling of titles
 (`พล.ต.อ.ทักษิณ`, 3 existing uses) over a typed variant (`พล.ตร.อ.`, 0 uses).
 
+**Copied real-world 2475 history into canon.** The constitutions table said
+ร.๗ granted the ๒๓๗๕ charter "ร่วมกับคณะราษฎร", and I copied that into a new
+card. The user caught it. In this site's canon ร.๗ granted it himself, without
+violence; คณะราษฎร is หลวงประดิษฐ์มนูธรรม's faction, filed under villains, and the
+"๔ ทหารเสือ" refused to join it *because* the charter had already been granted
+(chakri-tab). This is the same leak as Manopakorn's ๒๔๗๕ dates. → Anything
+touching 2475 — คณะราษฎร, สมุดปกเหลือง, ๒๔ มิถุนายน, "ฉบับถาวร ๑๐ ธันวาคม" —
+is probably real history, not canon. Check it against rama7-tab and chakri-tab
+before repeating it, even when the text is already on the site.
+
 ---
 
 ## Known-good baseline
