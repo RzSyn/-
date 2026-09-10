@@ -1,1 +1,6 @@
-<svg width="900" height="600" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><rect x="0" y="0.0" width="900" height="100.0" fill="#A51931"/><rect x="0" y="100.0" width="900" height="100.0" fill="#F4F5F8"/><rect x="0" y="200.0" width="900" height="200.0" fill="#A51931"/><rect x="0" y="400.0" width="900" height="100.0" fill="#F4F5F8"/><rect x="0" y="500.0" width="900" height="100.0" fill="#A51931"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600">
+<rect fill="#A51931" width="900" height="600"/>
+<rect fill="#F4F5F8" y="100" width="900" height="400"/>
+<rect fill="#A51931" y="200" width="900" height="200"/>
+</svg>
