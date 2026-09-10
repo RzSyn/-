@@ -6,7 +6,7 @@ description: Working rules for the รัฐธรรมนุญจำลอง
 # รัฐธรรมนุญจำลอง — working rules
 
 Fictional worldbuilding site: a simulated Thai constitution, 38 chapters plus a
-47-tab dashboard. Invented history, PMs, parties and institutions are
+48-tab dashboard. Invented history, PMs, parties and institutions are
 **intentional**. Never "correct" them toward real-world facts.
 
 Almost everything lives in one file: `website_constitution.html`
@@ -79,8 +79,8 @@ print(f"buttons {len(buttons)} == panels: {buttons == set(spans)}")
 **Expected healthy output:**
 
 ```
-unclosed 2 | stray 0 | panels 47 | overlaps []
-buttons 47 == panels: True
+unclosed 2 | stray 0 | panels 48 | overlaps []
+buttons 48 == panels: True
 ```
 
 - `unclosed 2` is correct and expected — `dashboard-card` and `preamble-section`
@@ -476,8 +476,8 @@ before repeating it, even when the text is already on the site.
 ## Known-good baseline
 
 ```
-unclosed 2 (dashboard-card, preamble-section) | stray 0 | panels 47 | overlaps []
-buttons 47 == panels: True
+unclosed 2 (dashboard-card, preamble-section) | stray 0 | panels 48 | overlaps []
+buttons 48 == panels: True
 13 inline <script> blocks, all pass node --check
 0 broken local references
 pms-tab: 34 rows (1 header + 33 PMs), every row 7 cells
