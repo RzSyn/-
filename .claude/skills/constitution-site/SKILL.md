@@ -453,6 +453,14 @@ are the source of truth; extract them, don't infer them.
 occurs on geopolitics-tab and on world-economy-tab ("TSL / EU"); the assert
 caught the second copy. Scope replacements to one panel's span.
 
+**Invented a whole cast when the user had one.** Built the cabinet tab with 20
+made-up minister names because the site named none. The user already had the
+full line-up — real politicians, several holding two ministries, the PM holding
+three — and replaced every name. → Before inventing *named people*, ask. Numbers
+and flavour text can be invented on "คิดขึ้นมาเองได้เลย"; a roster of
+characters is the user's to cast. Also: use the site's spelling of titles
+(`พล.ต.อ.ทักษิณ`, 3 existing uses) over a typed variant (`พล.ตร.อ.`, 0 uses).
+
 ---
 
 ## Known-good baseline
