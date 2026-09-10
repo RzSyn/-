@@ -5,8 +5,8 @@ description: Working rules for the รัฐธรรมนุญจำลอง
 
 # รัฐธรรมนุญจำลอง — working rules
 
-Fictional worldbuilding site: a simulated Thai constitution, 37 chapters plus a
-40-tab dashboard. Invented history, PMs, parties and institutions are
+Fictional worldbuilding site: a simulated Thai constitution, 38 chapters plus a
+43-tab dashboard. Invented history, PMs, parties and institutions are
 **intentional**. Never "correct" them toward real-world facts.
 
 Almost everything lives in one file: `website_constitution.html`
@@ -79,8 +79,8 @@ print(f"buttons {len(buttons)} == panels: {buttons == set(spans)}")
 **Expected healthy output:**
 
 ```
-unclosed 2 | stray 0 | panels 40 | overlaps []
-buttons 40 == panels: True
+unclosed 2 | stray 0 | panels 43 | overlaps []
+buttons 43 == panels: True
 ```
 
 - `unclosed 2` is correct and expected — `dashboard-card` and `preamble-section`
@@ -148,6 +148,27 @@ host_c = src.index('</section>', insertion_point)
 assert host_o < insertion_point < host_c, "must land inside the tab container"
 ```
 
+### Never end a replacement regex on a run of closing tags
+
+Replacing a repeated block with `re.compile(r'<div ...>.*?</div></div>', re.S)`
+does **not** stop at the end of the block. It stops at the first place two
+closes happen to sit together — which, for a row of cards, is the end of the
+*first card*. The rest of the row survives and each replacement leaves a
+surplus `</div>`.
+
+This happened while swapping five flag rows: two-cell rows kept their old
+second cell, and the validator reported `unclosed 1 | stray 4`.
+
+Match the block's real extent by walking depth from its opening tag, exactly as
+in **Find a tag's real span** above — or, when the block is one line, replace
+the whole line by index after asserting its shape:
+
+```python
+old = lines[n - 1]
+assert old.count('</div>') == old.count('<div') + 1, 'unexpected shape'
+lines[n - 1] = new_row
+```
+
 ### Adding a new tab — both halves are required
 
 1. **Panel** — insert as a *sibling* after the last panel closes, inside the host
@@ -177,6 +198,8 @@ Every one of these cost a failed command in real sessions.
 | `grep -P` | `-P supports only unibyte and UTF-8 locales` | Use Python `re`, or `grep -oE` |
 | ripgrep lookahead `(?!…)` | `look-around … is not supported` | Filter in Python instead |
 | Non-greedy `.*?` across the whole file | Matches content in unrelated sections | Scope the regex to one panel's slice first |
+| Downloading from Wikimedia with no User-Agent | HTTP 200 but the body is a ~2 KB HTML error page, saved happily under a `.svg`/`.png` name | Always send `curl -A "<something descriptive>"`; check the first bytes are not `<!DOCTYPE html>` |
+| Counting `<svg` / `</svg>` across the whole file | Reports one unclosed tag; the extra `<svg` is a string inside minified Leaflet at line ~1361 | Only count inside markup, or ignore `<script>` regions |
 | `file://` with Thai path in the browser tool | Cannot open | Validate structurally instead; browser preview is not available for this file |
 
 **Always read a file's real bytes before assuming.** Reading
@@ -199,6 +222,28 @@ changed the answer:
 - PM 4's term count was assumed to be one 8-year term. The site actually
   documents `วาระละ ๘ ปี` for the modern era only; the older constitution used
   4-year terms, making it two terms. The user had to correct this.
+
+**Check `images/` and git history before creating any asset.** A tab having no
+`<img>` does not mean no artwork exists. Before drawing or generating anything:
+
+```bash
+ls images/ | grep -i <topic>
+git rev-list --all --objects | awk '{print $2}' | grep -i <topic>
+```
+
+And verify the files are what their extension claims — several are not:
+
+```bash
+head -c 40 images/<file>        # <!DOCTYPE html> means it is an error page
+```
+
+Real case: the flag tab was rewritten with seven hand-drawn SVG flags. The user
+asked whether correct images already existed. They did — `flag1.svg`,
+`flag4.svg` (a 65 KB white elephant) and `flag7.svg` were real artwork deleted
+by commit `e28a463`, whose message claims the opposite of what it did. Of the
+seven files it touched, four were Wikimedia error pages; it kept those and
+deleted the three genuine ones. All `images/flag*.png` are still error pages,
+referenced nowhere.
 
 **Do not invent numbers unless told to.** When data is missing, say which fields
 are missing and ask. The user will often say "คิดขึ้นมาเองได้เลย" — only then
@@ -377,13 +422,32 @@ also had seat counts (๓๖๔/๕๐๐) and both poll figures (๔๑% → �
 asked "เอามาจากไหน" and the better source surfaced. → RULE 5: find *all*
 occurrences of a fact, then use the richest one.
 
+**Drew artwork without checking whether artwork existed.** Rebuilt the flag
+tab with seven hand-made SVG flags, having only checked that the *tab* had no
+`<img>`. `images/` and git history both held real files. The user had to ask
+twice before the check happened. → RULE 5: search `images/` and
+`git rev-list --all --objects` before creating any asset.
+
+**Ended a replacement regex on `</div></div>`.** Swapping five flag rows, the
+non-greedy match stopped at the end of the first *cell* instead of the row.
+Two-cell rows kept their old second cell and each row gained a surplus close;
+validator reported `unclosed 1 | stray 4`. Recovery by `git checkout` and
+`git stash` were both refused by the permission classifier as irreversible, so
+the fix had to go forward: rebuild the five affected lines by index. → RULE 3,
+and note that reverting is not always available — prefer an edit that cannot
+break in the first place.
+
+**Trusted a commit message over the bytes.** `e28a463` says "Replace SVG flag
+error files with real 320px PNG flag thumbnails from Wikipedia". It replaced
+real files with error pages. Read the bytes, not the subject line.
+
 ---
 
 ## Known-good baseline
 
 ```
-unclosed 2 (dashboard-card, preamble-section) | stray 0 | panels 40 | overlaps []
-buttons 40 == panels: True
+unclosed 2 (dashboard-card, preamble-section) | stray 0 | panels 43 | overlaps []
+buttons 43 == panels: True
 13 inline <script> blocks, all pass node --check
 0 broken local references
 pms-tab: 34 rows (1 header + 33 PMs), every row 7 cells
